@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="Autism Awareness Party of Sweden (AAP) is a non-electoral advocacy organization dedicated to neurodiversity rights, inclusion, and science-based policy in Stockholm. Led by Doğukan Yegin.">
+    <meta name="keywords" content="Neurodiversity Sweden, Autism Rights, AAP Sverige, Doğukan Yegin, Autism Advocacy, Neurodivergent Rights Stockholm, Inclusion Policy">
+    <meta name="author" content="Doğukan Yegin">
+    <meta name="robots" content="index, follow">
+
+    <!-- Social Media / Open Graph -->
+    <meta property="og:title" content="AAP Sweden - A Voice for Neurodiversity">
+    <meta property="og:description" content="Building a future where neurodiversity is a strength. A non-electoral advocacy initiative based in Stockholm.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=AAP+Sweden+Official">
+    <meta property="og:url" content="https://www.autismparty.se">
+    <meta property="og:type" content="website">
+
+    <title>Autism Awareness Party of Sweden</title>
+    <style>
+        /* İSVEÇ STİLİ MİNİMALİST TASARIM */
+        :root {
+            --sweden-blue: #005293;
+            --sweden-yellow: #FECB00;
+            --dark-grey: #333;
+            --light-grey: #f4f4f4;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark-grey);
+            line-height: 1.6;
+        }
+        /* HEADER */
+        header {
+            background-color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--sweden-blue);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .logo span { color: var(--sweden-yellow); }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--dark-grey);
+            margin-left: 30px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        nav a.btn {
+            background-color: var(--sweden-blue);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(rgba(0, 82, 147, 0.8), rgba(0, 82, 147, 0.8)), url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero-content p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+        .disclaimer-badge {
+            background-color: rgba(0,0,0,0.5);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 20px;
+            border: 1px solid var(--sweden-yellow);
+        }
+
+        /* MISSION SECTION */
+        .mission {
+            padding: 80px 50px;
+            background-color: white;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        .card {
+            padding: 30px;
+            background: var(--light-grey);
+            border-radius: 8px;
+        }
+        .card h3 { color: var(--sweden-blue); }
+
+        /* FOUNDER SECTION */
+        .founder {
+            background-color: var(--light-grey);
+            padding: 80px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        .founder-text {
+            max-width: 500px;
+        }
+        .founder-img {
+            width: 200px;
+            height: 200px;
+            background-color: #ddd; /* FOTOĞRAFIN BURAYA GELECEK */
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .coat-of-arms {
+            width: 80px;
+            margin-top: 20px;
+            opacity: 0.8;
+        }
+
+        /* DOCUMENTS SECTION */
+        .documents {
+            padding: 60px 50px;
+            text-align: center;
+            background-color: var(--sweden-blue);
+            color: white;
+        }
+        .doc-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: white;
+            color: var(--sweden-blue);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+        .doc-btn:hover {
+            background-color: var(--sweden-yellow);
+            color: black;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #222;
+            color: #aaa;
+            padding: 40px 50px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .legal-text {
+            max-width: 800px;
+            margin: 0 auto;
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        /* --- MOBİL UYUMLULUK (RESPONSIVE DESIGN) --- */
+        @media screen and (max-width: 768px) {
+            header { flex-direction: column; padding: 20px; text-align: center; }
+            nav { margin-top: 20px; display: flex; flex-direction: column; gap: 15px; width: 100%; }
+            nav a { margin-left: 0; display: block; padding: 10px; border-bottom: 1px solid #eee; }
+            nav a.btn { margin-top: 10px; display: inline-block; }
+            .hero-content h1 { font-size: 32px; line-height: 1.2; }
+            .hero-content p { font-size: 16px; padding: 0 20px; }
+            .grid, .founder { flex-direction: column; padding: 20px; }
+            .founder-img { margin-bottom: 20px; }
+            footer { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">AAP <span>SVERIGE</span></div>
+        <nav>
+            <a href="mission.html">Our Mission</a>
+            <a href="founder.html">The Founder</a>
+            <a href="policy.html">Policy</a>
+            <a href="library.html">Library</a>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="disclaimer-badge">Non-Electoral Advocacy Initiative</div>
+            <h1>A Voice for Neurodiversity</h1>
+            <p>We are building a more inclusive Sweden through science, awareness, and human rights advocacy.</p>
+            <a href="#mission" style="color: white; text-decoration: underline;">Read our Vision</a>
+        </div>
+    </section>
+
+    <!-- MISSION SECTION -->
+    <section id="mission" class="mission">
+        <h2>Our Core Principles</h2>
+        <p>We operate beyond ideology, focusing on concrete solutions.</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Science First</h3>
+                <p>Our policies are not based on political dogma, but on evidence-based research and medical data.</p>
+            </div>
+            <div class="card">
+                <h3>Human Rights</h3>
+                <p>We advocate for the full social inclusion and legal protection of every neurodivergent individual.</p>
+            </div>
+            <div class="card">
+                <h3>Independence</h3>
+                <p>We are a non-electoral party. We do not seek power; we seek change. We are politically neutral.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOUNDER SECTION -->
+    <section class="founder">
+        <div class="founder-img">
+            <!-- SENİN FOTOĞRAFIN BURAYA: <img src="senin-foton.jpg" style="width:100%; height:100%; border-radius:50%;"> -->
+        </div>
+        <div class="founder-text">
+            <h2>Meet the Founder</h2>
+            <p><strong>Doğukan Yegin</strong> is a tech entrepreneur and advocate for neurodiversity rights. With a background in cybersecurity and game development, he brings a rational, solution-oriented approach to social advocacy.</p>
+            <p><em>"Our goal is not to win elections, but to win the future for those who think differently."</em></p>
+            
+            <!-- ARMA BURAYA GELECEK -->
+            <!-- <img src="arma.png" class="coat-of-arms" alt="Personal Coat of Arms"> -->
+            <div style="margin-top: 20px; font-size: 12px; color: #666;">
+                [Coat of Arms Registered at Malta Heraldry]
+            </div>
+        </div>
+    </section>
+
+    <!-- DOCUMENTS SECTION -->
+    <section class="documents">
+        <h2>Transparency & Governance</h2>
+        <p>We believe in full transparency. Download our official statutes to learn more about our non-electoral structure.</p>
+        <a href="src\downloads\stadgar_2026.pdf" download>Download Official Statutes (PDF)</a>
+    </section>
+
+
+    <!-- PRIVACY POLICY (GDPR) -->
+    <section id="privacy">
+        <h2>Privacy Policy (GDPR)</h2>
+        <p><em>Last updated: 2026-01-13</em></p>
+
+        <h3>1. Purpose of This Policy</h3>
+        <p>Autism Awareness Party of Sweden respects the privacy of individuals and processes personal data in accordance with the EU General Data Protection Regulation (GDPR). This policy explains what personal data is processed, for what purpose, and what rights individuals have.</p>
+
+        <h3>2. Data Controller</h3>
+        <p><strong>Autism Awareness Party of Sweden</strong><br>
+        Email: <a href="mailto:kontakt@dindomän.se">kontakt@dindomän.se</a></p>
+
+        <h3>3. Personal Data We Process</h3>
+        <p>We process only minimal and voluntarily provided personal data, which may include: name, email address, country of residence, and optional information provided in membership or contact communications. We do not intentionally collect sensitive personal data.</p>
+
+        <h3>4. Purpose of Processing</h3>
+        <p>Personal data is processed exclusively for handling membership applications, internal communication related to the party’s activities, and responding to inquiries. Personal data is never used for commercial purposes, profiling, or political campaigning.</p>
+
+        <h3>5. Legal Basis</h3>
+        <p>Processing is based on explicit consent given by the individual (Article 6(1)(a) GDPR), or legitimate interest limited to internal administration and communication (Article 6(1)(f) GDPR).</p>
+
+        <h3>6. Data Retention</h3>
+        <p>Personal data is retained only for as long as necessary to fulfill the stated purposes. Membership-related data is deleted upon termination of membership or upon request.</p>
+
+        <h3>7. Data Sharing and Transfers</h3>
+        <p>Personal data is not shared with third parties, not sold, and not transferred for advertising or political campaigning. Digital communication and storage may involve service providers located outside Sweden; such processing is conducted in accordance with GDPR safeguards.</p>
+
+        <h3>8. Data Security</h3>
+        <p>Reasonable technical and organizational measures are applied to protect personal data against unauthorized access, loss, or misuse. Access is restricted to authorized persons only.</p>
+
+        <h3>9. Your Rights</h3>
+        <p>Individuals have the right to request access, correction, and deletion of their personal data, and to withdraw consent at any time. Requests can be made by contacting the data controller via the email address above.</p>
+
+        <h3>10. Cookies and Tracking</h3>
+        <p>This website does not use cookies, tracking technologies, or analytics tools that collect personal data.</p>
+
+        <h3>11. Changes to This Policy</h3>
+        <p>This policy may be updated if required by law or changes in operations. The current version is always published on this website.</p>
+
+        <h3>12. Contact</h3>
+        <p>If you have questions regarding personal data or this policy, please contact: <a href="mailto:kontakt@dindomän.se">kontakt@dindomän.se</a></p>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Autism Awareness Party of Sweden. All Rights Reserved. <a href="#privacy" style="color:#fff; text-decoration:underline;">Privacy Policy (GDPR)</a></p>
+        <p>Stockholm, Sweden</p>
+                <p>
+            This website is operated by a non-profit association (ideell förening) under Swedish law.
+        </p>
+
+        <div class="legal-text">
+            <strong>LEGAL DISCLAIMER:</strong> The Autism Awareness Party of Sweden is a non-electoral political advocacy organization operating as a non-profit association (ideell förening) under Swedish law. The Party does not participate in elections, does not nominate candidates for public office, and does not receive public campaign funding. The Party is independent and not affiliated with any other political entity.
+        </div>
+    </footer>
+
+</body>
+</html>

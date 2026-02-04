@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="AAP Sweden Library. Official translations of Swedish and Norwegian Constitutions by Founder Doğukan Yegin, and Party Statutes.">
+    <meta name="keywords" content="Swedish Constitution Turkish, Norveç Anayasası, AAP Library, Doğukan Yegin Books, Political Literature, Party Statutes">
+    <meta name="author" content="Doğukan Yegin">
+    <meta name="robots" content="index, follow">
+
+    <title>Library - AAP Sweden</title>
+    <style>
+        /* İSVEÇ STİLİ MİNİMALİST TASARIM */
+        :root { --sweden-blue: #005293; --sweden-yellow: #FECB00; --dark-grey: #333; --light-grey: #f4f4f4; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: var(--dark-grey); line-height: 1.6; }
+        
+        /* HEADER */
+        header { background-color: white; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .logo { font-size: 24px; font-weight: bold; color: var(--sweden-blue); text-transform: uppercase; letter-spacing: 1px; text-decoration: none;}
+        .logo span { color: var(--sweden-yellow); }
+        nav a { text-decoration: none; color: var(--dark-grey); margin-left: 30px; font-weight: 500; font-size: 14px; }
+        nav a.btn { background-color: var(--sweden-blue); color: white; padding: 10px 20px; border-radius: 4px; }
+
+        /* PAGE HEADER */
+        .page-header { background-color: var(--sweden-blue); color: white; padding: 60px 50px; text-align: center; }
+        .page-header h1 { margin: 0; font-size: 36px; }
+        .page-header p { font-size: 18px; opacity: 0.9; margin-top: 10px; }
+
+        /* LIBRARY GRID */
+        .library-container { max-width: 1100px; margin: 50px auto; padding: 20px; }
+        
+        .section-title { text-align: center; margin-bottom: 40px; color: var(--dark-grey); }
+        .section-title h2 { font-size: 28px; margin-bottom: 10px; }
+        .section-title span { display: block; width: 50px; height: 3px; background: var(--sweden-yellow); margin: 0 auto; }
+
+        .book-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        
+        .book-card { background: white; border: 1px solid #eee; border-radius: 8px; overflow: hidden; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; }
+        .book-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        
+        .book-cover { width: 100%; height: 400px; background-color: #ddd; object-fit: cover; border-bottom: 1px solid #eee; }
+        
+        .book-info { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        .book-tag { font-size: 11px; text-transform: uppercase; color: var(--sweden-blue); font-weight: bold; letter-spacing: 1px; margin-bottom: 10px; }
+        .book-title { font-size: 20px; font-weight: bold; margin: 0 0 10px 0; color: #222; }
+        .book-author { font-size: 14px; color: #666; margin-bottom: 15px; font-style: italic; }
+        .book-desc { font-size: 14px; color: #555; margin-bottom: 20px; flex-grow: 1; }
+        
+        .book-btn { text-decoration: none; background-color: var(--dark-grey); color: white; padding: 10px 15px; text-align: center; border-radius: 4px; font-size: 14px; transition: 0.3s; }
+        .book-btn:hover { background-color: var(--sweden-blue); }
+        .book-btn.secondary { background-color: white; color: var(--dark-grey); border: 1px solid #ccc; margin-top: 10px; }
+        .book-btn.secondary:hover { background-color: #f9f9f9; border-color: #bbb; }
+
+        /* OFFICIAL DOCS SECTION */
+        .docs-section { background-color: var(--light-grey); padding: 60px 20px; margin-top: 80px; text-align: center; }
+        .doc-box { background: white; max-width: 700px; margin: 0 auto; padding: 40px; border-radius: 8px; border-left: 5px solid var(--sweden-blue); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+
+        /* FOOTER */
+        footer { background-color: #222; color: #aaa; padding: 40px 50px; font-size: 12px; text-align: center; margin-top: 0;}
+        .legal-text { max-width: 800px; margin: 20px auto 0 auto; border-top: 1px solid #444; padding-top: 20px; }
+
+        /* MOBİL UYUMLULUK */
+        @media screen and (max-width: 768px) {
+            header { flex-direction: column; padding: 20px; text-align: center; }
+            nav { margin-top: 20px; display: flex; flex-direction: column; gap: 15px; width: 100%; }
+            nav a { margin-left: 0; display: block; padding: 10px; border-bottom: 1px solid #eee; }
+            nav a.btn { margin-top: 10px; display: inline-block; }
+            .book-cover { height: auto; aspect-ratio: 2/3; }
+            .page-header h1 { font-size: 28px; }
+            footer { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">AAP <span>SVERIGE</span></a>
+        <nav>
+            <a href="mission.html">Our Mission</a>
+            <a href="founder.html">The Founder</a>
+            <a href="library.html" style="color: var(--sweden-blue);">Library</a>
+            <a href="policy.html">Policy</a>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>The AAP Library</h1>
+        <p>Intellectual foundations, legal translations, and official party documents.</p>
+    </div>
+
+    <div class="library-container">
+        
+        <div class="section-title">
+            <h2>Publications by the Founder</h2>
+            <span></span>
+            <p style="margin-top: 15px; color: #666;">Bridging cultures through the language of law.</p>
+        </div>
+
+        <div class="book-grid">
+            <!-- BOOK 1: SWEDEN -->
+            <div class="book-card">
+                <!-- KİTAP KAPAĞI RESMİ BURAYA: src="isvec-anayasa-kapak.jpg" -->
+                <img src="src\img\isvecanayasasi.png" class="book-cover" alt="İsveç Anayasası Kitabı">
+                <div class="book-info">
+                    <div class="book-tag">Legal Translation</div>
+                    <h3 class="book-title">İsveç Anayasası: Temel Yasalar ve Riksdag Yasası</h3>
+                    <div class="book-author">Translated by Doğukan Yegin</div>
+                    <p class="book-desc">A comprehensive Turkish translation of the Fundamental Laws of Sweden (Grundlagarna) and the Riksdag Act. Understanding the operating system of Swedish democracy.</p>
+                    <div style="font-size: 12px; color: #888; margin-bottom: 15px;">
+                        <strong>Official ISBN:</strong> [978-625-93133-1-3]
+                    </div>
+                    <a href="src\downloads\grundlagar-2023-engelsk-web tr (1).pdf" class="book-btn">View Details</a>
+                </div>
+            </div>
+
+            <!-- BOOK 2: NORWAY -->
+            <div class="book-card">
+                <!-- KİTAP KAPAĞI RESMİ BURAYA: src="norvec-anayasa-kapak.jpg" -->
+                <img src="src\img\norvecanayasasi.png" class="book-cover" alt="Norveç Anayasası Kitabı">
+                <div class="book-info">
+                    <div class="book-tag">Legal Translation</div>
+                    <h3 class="book-title">Norveç Anayasası</h3>
+                    <div class="book-author">Translated by Doğukan Yegin</div>
+                    <p class="book-desc">A meticulous translation of the Constitution of the Kingdom of Norway. A comparative look at Nordic constitutional monarchy and democratic rights.</p>
+                    <div style="font-size: 12px; color: #888; margin-bottom: 15px;">
+                        <strong>Official ISBN:</strong> [978-625-93133-0-6]
+                    </div>
+                    <a href="src\downloads\constitutionenglish tr.pdf" class="book-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- OFFICIAL DOCUMENTS SECTION -->
+    <div class="docs-section">
+        <div class="section-title">
+            <h2>Official Party Documents</h2>
+            <span></span>
+        </div>
+        
+        <div class="doc-box">
+            <h3>The Grand Constitution & Statutes</h3>
+            <p style="font-style: italic; color: #666; margin-bottom: 20px;">Adopted January 15, 2026 | Stockholm</p>
+            <p>The foundational legal document of the Autism Awareness Party of Sweden. It defines our non-electoral mandate, the "Doctrine of Fiscal Non-Existence," and our commitment to neurodiversity rights.</p>
+            
+            <a href="src\downloads\stadgar_2026.pdf" class="book-btn" style="display: inline-block; margin-top: 20px;" download>
+                Download Official PDF (English)
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Autism Awareness Party of Sweden. All Rights Reserved.</p>
+        <p>Stockholm, Sweden</p>
+        <p>This website is operated by a non-profit association (ideell förening) under Swedish law.</p>
+
+        <div class="legal-text">
+            <strong>LEGAL DISCLAIMER:</strong> The Autism Awareness Party of Sweden is a non-electoral political advocacy organization operating as a non-profit association (ideell förening). The Party does not participate in elections, does not nominate candidates for public office, and does not receive public campaign funding.
+        </div>
+    </footer>
+
+</body>
+</html>
